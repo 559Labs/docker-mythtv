@@ -27,7 +27,10 @@ RUN mkdir /build && cd /build && \
   cd mythtv && \
   ./configure && \
   make -j 5 && \
-  make install
+  make install && \
+  cd / && \
+  rm /build -R
+  
 
 
 
